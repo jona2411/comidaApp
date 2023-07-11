@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+    
+    <header class="contenedor header">
+        <div class="header__logo">
+            <img src="build/img/logo.svg" alt="">
+        </div>
+        <nav class="navegacion">
+            <a href="#" class="navegacion__link">Iniciar Sesion</a>
+            <a href="#" class="navegacion__link">Crear Cuenta</a>
+            <a href="#" class="navegacion__link navegacion__link--registrar">Registrar restaurant</a>
+        </nav>
+    </header>
+
+    <section class="contenedor formulario">
+        <div class="formulario__grid">
+            <div class="formulario__contenido">
+                <h2 class="formulario__heading">encuentra y pide comida de tu restaurant favorito</h2>
+                <form action="" class="formulario__buscar">
+                    <div class="formulario__campo">
+                        <Label class="formulario__label" for="restaurant">Restaurant</Label>
+                        <input id="restaurant" type="text" class="formulario__input" placeholder="tacos mexico">
+                    </div>
+                    <div class="formulario__campo">   
+                        <Label class="formulario__label" for="platillo">platillo</Label>
+                        <input id="platillo" type="text" class="formulario__input" placeholder="pizza, ensalada">
+                    </div>
+
+                    <input type="submit" class="formulario__submit" value="buscar">
+                </form>
+            </div>
+            <div class="formulario__imagen-contenedor">
+                <img class="formulario__img" src="build/img/dibujo_repartidor.svg" alt="repartidor">
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>
