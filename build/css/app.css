@@ -544,4 +544,127 @@ h3 {
     width: 100%;
   }
 }
+
+.pasos {
+  margin-top: 5rem;
+}
+.pasos__contenido {
+  background-color: #e8505b;
+  margin-top: 0;
+}
+.pasos__heading {
+  text-align: center;
+  color: #FFFFFF;
+}
+.pasos__heading--cambio {
+  font-size: 1.8rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .pasos__grid {
+    padding-top: 3rem;
+    display: grid;
+    gap: 5rem;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.pasos__imagen {
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
+}
+.pasos__imagen:hover {
+  -webkit-transform: rotate(-4deg) scale(1.3);
+          transform: rotate(-4deg) scale(1.3);
+}
+
+.testimoniales {
+  padding: 5rem 0;
+}
+.testimoniales__heading {
+  text-align: center;
+}
+@media (min-width: 768px) {
+  .testimoniales__grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.testimonial {
+  background-color: #455a64;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  color: #FFFFFF;
+}
+.testimonial:last-of-type {
+  margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .testimonial {
+    margin-bottom: 0;
+  }
+  .testimonial:nth-of-type(1) {
+    grid-column: 1/4;
+  }
+  .testimonial:nth-child(3) {
+    grid-column: 5/6;
+    grid-row: 1/3;
+  }
+  .testimonial:nth-child(4) {
+    grid-column: 1/3;
+  }
+  .testimonial:nth-child(5) {
+    grid-column: 3/5;
+  }
+}
+.testimonial__header {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+.testimonial__imagen {
+  flex-basis: 10rem;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.testimonial__autor {
+  color: #FFFFFF;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.testimonial__texto {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin: 2rem 0 0 0;
+  padding-left: 4rem;
+  position: relative;
+}
+.testimonial__texto::before {
+  content: ' " ';
+  font-size: 10rem;
+  position: absolute;
+  left: 0;
+  top: -4rem;
+  opacity: 0.2;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+.favoritoa {
+  background-color: #eceeef;
+  padding: 5rem 0;
+}
+.favoritoa__heading {
+  text-align: center;
+  color: #455a64;
+}
+@media (min-width: 768px) {
+  .favoritoa__grid {
+    display: grid;
+    gap: 4rem;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 /*# sourceMappingURL=app.css.map */
