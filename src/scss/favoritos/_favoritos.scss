@@ -2,13 +2,15 @@
 @use '../base/mixins' as m;
 
 
-.favoritoa{
+.favoritos{
     background-color: v.$grisClaro;
     padding: v.$separacion 0;
+    
 
     &__heading{
         text-align: center;
         color: v.$secundario;
+        
     }
     &__grid{
         @include m.tablet{
